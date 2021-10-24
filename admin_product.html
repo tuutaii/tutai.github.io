@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <title>Admin page Nong San Xanh</title>
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="css/admin_product.css">
+    </head>
+
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="admin.html">
+                        <span class="icon"><i class="fas fa-users-cog"></i></span>
+                        <span  class="title"><h2>ADMIN</h2></span>
+                    </a>
+                </li>
+                <br><br>
+                <li>
+                    <a href="admin.html">
+                        <span class="icon"><i class="  fas fa-home" aria-hidden="true"></i></span>
+                        <span  class="title">Trang chủ</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="isActive" href="#">
+                        <span class="icon"><i class="fas fa-shopping-basket" aria-hidden="true"></i></span>
+                        <span  class="title">Quản lý nhà cung cấp</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin_post.html">
+                        <span class="icon"><i class="fas fa-users" aria-hidden="true"></i></span>
+                        <span  class="title">Quản lý bài đăng</span>
+                    </a>
+                </li>
+                
+    
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="user.jpg">
+                </div>
+            </div>
+          
+            <div class="details">
+                <div class="product">
+                    <div class="cardHeader">
+                        <h2>Danh sách các nhà cung cấp</h2>
+                    </div>
+                    <table >
+                        <thead>
+                            <tr>
+                                <td>Hình Ảnh</td>
+                                <td>Tên thương hiệu</td>
+                                <td>Ngày đăng ký</td>
+                                <td>Phân loại</td>
+                                <td>Mô tả</td>
+                                <td>Hành động</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="admin_Viewproduct.html"><span><img src="img1.jpg"></span></a></td>
+                                <td>Bắp cải xanh</td>
+                                <td>20.000</td>
+                                <td>Rau củ</td>
+                                <td>Bắp cải xanh tươi nhà trồng.</td>
+                                <td><i class="fas fa-user-minus" style="color: red;"></i><i class="fas fa-exclamation-triangle" style="color: orange;"></i></td>
+                            </tr>
+                            <tr>
+                                <td><span><img src="img2.jpg"></span></td>
+                                <td>Bắp cải xanh</td>
+                                <td>20.000</td>
+                                <td>Rau củ</td>
+                                <td>Bắp cải xanh tươi nhà trồng.</td>
+                                <td><i class="fas fa-user-minus" style="color: red;"></i><i class="fas fa-exclamation-triangle"style="color: orange;"></i></td>
+                            </tr>
+                            <tr>
+                                <td><span><img src="img3.jpg"></span></td>
+                                <td>Bắp cải xanh</td>
+                                <td>20.000</td>
+                                <td>Rau củ</td>
+                                <td>Bắp cải xanh tươi nhà trồng.</td>
+                                <td><i class="fas fa-user-minus" style="color: red;"></i><i class="fas fa-exclamation-triangle"style="color: orange;"></i></td>
+                            </tr>
+                            <tr>
+                                <td><span><img src="img4.jpg"></span></td>
+                                <td>Bắp cải xanh</td>
+                                <td>20.000</td>
+                                <td>Rau củ</td>
+                                <td>Bắp cải xanh tươi nhà trồng.</td>
+                                <td><i class="fas fa-user-minus" style="color: red;"></i><i class="fas fa-exclamation-triangle" style="color: orange;"></i></td>
+                            </tr> 
+                           
+                        </tbody>
+                    </table>
+                        <ul  class="pagination " >
+                            <li class="pagination_item">
+                                <a href="" class="pagination_item_click"><</a>
+                            </li>
+                            <li class="pagination_item active">
+                                <a href="" class="pagination_item_click">1</a>
+                            </li>
+                            <li class="pagination_item">
+                                <a href="" class="pagination_item_click">2</a>
+                            </li>
+                            <li class="pagination_item">
+                                <a href="" class="pagination_item_click">3</a>
+                            </li>
+                            <li class="pagination_item">
+                                <a href="" class="pagination_item_click">...</a>
+                            </li>
+                            <li class="pagination_item">
+                                <a href="" class="pagination_item_click">10</a>
+                            </li>
+                            <li class="pagination_item">
+                                <a href="" class="pagination_item_click">></a>
+                            </li>
+                        </ul>   
+                </div>
+                <div >
+                   
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+            main.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

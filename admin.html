@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <title>Admin page Nong San Xanh</title>
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="css/admin_home.css">
+    </head>
+
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a  href="#">
+                        <span class="icon"><i class="fas fa-users-cog" aria-hidden="true"></i></span>
+                        <span  class="title"><h2>ADMIN</h2></span>
+                    </a>
+                </li> 
+                
+                <br><br>
+                <li>
+                    <a class="isActive" href="admin.html">
+                        <span class="icon"><i class="  fas fa-home" aria-hidden="true"></i></span>
+                        <span  class="title">Trang chủ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin_product.html">
+                        <span class="icon"><i class="fas fa-shopping-basket" aria-hidden="true"></i></span>
+                        <span  class="title">Quản lý nhà cung cấp</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin_post.html">
+                        <span class="icon"><i class="fas fa-users" aria-hidden="true"></i></span>
+                        <span  class="title">Quản lý bài đăng</span>
+                    </a>
+                </li>
+                
+    
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="user.jpg">
+                </div>
+            </div>
+
+
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,042</div>
+                        <div class="cardName">Lượt truy cập Web</div> 
+                    </div>     
+                    <div class="iconBox"><i class="fas fa-eye"></i></div> 
+                </div>
+               
+                <div class="card">
+                    <div>
+                        <div class="numbers">800</div>
+                        <div class="cardName">Comment</div>
+                    </div>
+                    <div class="iconBox"><i class="fas fa-comments"></i></div>
+                </div>
+                
+                <div class="card">
+                    <div>
+                        <div class="numbers">200</div>
+                        <div class="cardName">Lượng người đăng ký</div> 
+                    </div>
+                    <div class="iconBox"><i class="fas fa-shopping-cart"></i></div>
+                </div>
+                
+                <div class="card">
+                    <div>
+                        <div class="numbers">200k$</div>
+                        <div class="cardName">Money earn</div> 
+                    </div>
+                    <div class="iconBox"><i class="fas fa-dollar-sign"></i></div>
+                </div>
+            </div>
+           
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Danh sách Nhà cung cấp</h2>
+                        <a href="#" class="btn">View all</a>
+                    </div>
+                    <table >
+                        <thead>
+                            <tr>
+                                <td>Tên thương hiệu</td>
+                                <td>Thời gian đăng ký</td>
+                                <td>Mô tả</td>
+                                <td>Tình trạng</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nhà cung cấp 1 </td>
+                                <td>Ngày..</td>
+                                <td>Buôn bán mặt hàng..</td>
+                                <td><span class="status delivered">Đã duyệt</span></td>
+                            </tr>
+                            <tr>
+                                <td>Nhà cung cấp 2 </td>
+                                <td>Ngày..</td>
+                                <td>Buôn bán mặt hàng..</td>
+                                <td><span class="status delivered">Đã duyệt</span></td>
+                            </tr>
+                            <tr>
+                                <td>Nhà cung cấp 3 </td>
+                                <td>Ngày..</td>
+                                <td>Buôn bán mặt hàng..</td>
+                                <td><span class="status inprogress">Đang chờ</span></td>
+                            </tr>
+                            <tr>
+                                <td>Nhà cung cấp 4 </td>
+                                <td>Ngày..</td>
+                                <td>Buôn bán mặt hàng..</td>
+                                <td><span class="status pending">Đang gửi lại yêu cầu</span></td>
+                            </tr>
+                            <tr>
+                                <td>Nhà cung cấp 5 </td>
+                                <td>Ngày..</td>
+                                <td>Buôn bán mặt hàng..</td>
+                                <td><span class="status return">Không duyệt</span></td>
+                            </tr>
+                            <tr>
+                                <td>Nhà cung cấp 6 </td>
+                                <td>Ngày..</td>
+                                <td>Buôn bán mặt hàng..</td>
+                                <td><span class="status delivered">Đã duyệt</span></td>
+                            </tr>
+                            <tr>
+                                <td>Nhà cung cấp 7 </td>
+                                <td>Ngày..</td>
+                                <td>Buôn bán mặt hàng..</td>
+                                <td><span class="status inprogress">Đang duyệt</span></td>
+                            </tr>
+                            <tr>
+                                <td>Nhà cung cấp 8 </td>
+                                <td>Ngày..</td>
+                                <td>Buôn bán mặt hàng..</td>
+                                <td><span class="status inprogress">Đang duyệt</span></td>
+                            </tr>
+                            <tr>
+                                <td>Nhà cung cấp 9 </td>
+                                <td>Ngày..</td>
+                                <td>Buôn bán mặt hàng..</td>
+                                <td><span class="status inprogress">Đang duệt</span></td>
+                            </tr>
+                            <tr>
+                                <td>Nhà cung cấp 10 </td>
+                                <td>Ngày..</td>
+                                <td>Buôn bán mặt hàng..</td>
+                                <td><span class="status delivered">Đã duyệt</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                         <h2>Nhà cung cấp nổi bật</h2>
+                     </div>
+                    <table>
+                        <tbody>
+                          <tr>
+                            <td width="60"><div class="imgBx"><img src="img1.jpg"></div></td>   
+                            <td><h4>David<br><span>Italy</span></h4></td>
+                          </tr>  
+                          <tr>
+                            <td><div class="imgBx"><img src="img2.jpg"><img src="img2.jpg"></div></td>   
+                            <td><h4>Nguyen Duc<br><span>Viet nam</span></h4></td>
+                          </tr>  
+                          <tr>
+                            <td><div class="imgBx"><img src="img3.jpg"></div></td>   
+                            <td><h4>Milan<br><span>Germany</span></h4></td>
+                          </tr>  
+                          <tr>
+                            <td><div class="imgBx"><img src="img4.jpg"></div></td>   
+                            <td><h4>Leona<br><span>France</span></h4></td>
+                          </tr>   
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+            main.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

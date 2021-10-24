@@ -1,0 +1,221 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <title>Trang nhà cung cấp</title>
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="css/home.css">
+    </head>
+
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a  href="#">
+                        <span class="icon"><i class="  fas fa-home" aria-hidden="true"></i></span>
+                        <span  class="title"><h2>NONGSANXANH</h2></span>
+                    </a>
+                </li>
+                <br><br>
+                <li>
+                    <a class="isActive" href="index.html">
+                        <span class="icon"><i class="  fas fa-home" aria-hidden="true"></i></span>
+                        <span  class="title">Trang chủ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="products.html">
+                        <span class="icon"><i class="fas fa-shopping-basket" aria-hidden="true"></i></span>
+                        <span  class="title">Quản lý nhà sản phẩm</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="bill.html">
+                        <span class="icon"><i class="fas fa-users" aria-hidden="true"></i></span>
+                        <span  class="title">Quản lý đơn hàng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="inbox.html">
+                        <span class="icon"><i class="fas fa-comments"></i></span>
+                        <span  class="title">Trò chuyện</span>
+                    </a>
+                </li>
+            
+                
+    
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <a href="profile.html"><img src="user.jpg"></a>
+                </div>
+            </div>
+
+
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,042</div>
+                        <div class="cardName">Daily View</div> 
+                    </div>     
+                    <div class="iconBox"><i class="fas fa-eye"></i></div> 
+                </div>
+               
+                <div class="card">
+                    <div>
+                        <div class="numbers">800</div>
+                        <div class="cardName">Comment</div>
+                    </div>
+                    <div class="iconBox"><i class="fas fa-comments"></i></div>
+                </div>
+                
+                <div class="card">
+                    <div>
+                        <div class="numbers">200</div>
+                        <div class="cardName">Sales</div> 
+                    </div>
+                    <div class="iconBox"><i class="fas fa-shopping-cart"></i></div>
+                </div>
+                
+                <div class="card">
+                    <div>
+                        <div class="numbers">200k$</div>
+                        <div class="cardName">Money earn</div> 
+                    </div>
+                    <div class="iconBox"><i class="fas fa-dollar-sign"></i></div>
+                </div>
+            </div>
+           
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">View all</a>
+                    </div>
+                    <table >
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>San pham 1 </td>
+                                <td>200.000</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>San pham 2</td>
+                                <td>100.000</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>San pham 3</td>
+                                <td>300.000</td>
+                                <td>Due</td>
+                                <td><span class="status inprogress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>San pham 4</td>
+                                <td>300.000</td>
+                                <td>Paid</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>San pham 5</td>
+                                <td>300.000</td>
+                                <td>Due</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>San pham 6</td>
+                                <td>300.000</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>San pham 7</td>
+                                <td>300.000</td>
+                                <td>Due</td>
+                                <td><span class="status inprogress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>San pham 8</td>
+                                <td>300.000</td>
+                                <td>Due</td>
+                                <td><span class="status inprogress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>San pham 9</td>
+                                <td>300.000</td>
+                                <td>Due</td>
+                                <td><span class="status inprogress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>San pham 10</td>
+                                <td>300.000</td>
+                                <td>Due</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                         <h2>Recent Customers</h2>
+                     </div>
+                    <table>
+                        <tbody>
+                          <tr>
+                            <td width="60"><div class="imgBx"><img src="img1.jpg"></div></td>   
+                            <td><h4>David<br><span>Italy</span></h4></td>
+                          </tr>  
+                          <tr>
+                            <td><div class="imgBx"><img src="img2.jpg"><img src="img2.jpg"></div></td>   
+                            <td><h4>Nguyen Duc<br><span>Viet nam</span></h4></td>
+                          </tr>  
+                          <tr>
+                            <td><div class="imgBx"><img src="img3.jpg"></div></td>   
+                            <td><h4>Milan<br><span>Germany</span></h4></td>
+                          </tr>  
+                          <tr>
+                            <td><div class="imgBx"><img src="img4.jpg"></div></td>   
+                            <td><h4>Leona<br><span>France</span></h4></td>
+                          </tr>   
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+            main.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

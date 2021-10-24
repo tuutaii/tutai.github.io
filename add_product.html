@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <title>Thêm sản phẩm</title>
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="css/add_product.css">
+    </head>
+
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><i class="  fas fa-home" aria-hidden="true"></i></span>
+                        <span  class="title"><h2>NONGSANXANH</h2></span>
+                    </a>
+                </li>
+                <br><br>
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><i class="  fas fa-home" aria-hidden="true"></i></span>
+                        <span  class="title">Trang chủ</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="isActive" href="#">
+                        <span class="icon"><i class="fas fa-shopping-basket" aria-hidden="true"></i></span>
+                        <span  class="title">Quản lý nhà sản phẩm</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="bill.html">
+                        <span class="icon"><i class="fas fa-users" aria-hidden="true"></i></span>
+                        <span  class="title">Quản lý đơn hàng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="inbox.html">
+                        <span class="icon"><i class="fas fa-comments"></i></span>
+                        <span  class="title">Trò chuyện</span>
+                    </a>
+                </li>
+              
+    
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="user.jpg">
+                </div>
+            </div>
+          
+            <div class="details">
+                <div class="productInfo">
+                    <div class="cardHeader">
+                        <h2>Chỉnh sửa thông tin sản phẩm</h2>
+                    </div>
+                    <div class="productMain">
+                        <h2>Tên sản phẩm</h2>
+                        <div class="form">
+                            <label>
+                                <input type="text" placeholder="Tên sản phẩm "> 
+                            </label>
+                        </div>
+                        <h2>Giá bán</h2>
+                        <div class="form">
+                            <label>
+                                <input type="text" placeholder="Giá bán "> 
+                            </label>
+                        </div>
+                        <h2>Mô tả</h2>
+                        <div class="form">
+                            <textarea>Mô tả sản phẩm</textarea>
+                        </div>
+                        <h2>Phân loại</h2>
+                        <div class="form">
+                            <label>
+                                <input type="text" placeholder="Phân loại "> 
+                            </label>
+                        </div>
+                        <h2>Số lượng</h2>
+                        <div class="form">
+                            <label>
+                                <input type="text" placeholder="Số lượng còn lại"> 
+                            </label>
+                        </div>    
+                        <div class="button">
+                            <a href="#" class="btn_them" >Cập nhật sản phẩm </a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="productImg">
+                    <br>
+                    <img src="img1.jpg">
+                    <div class="button"><a href="products.html" class="btn_them">Cập nhật ảnh</a></div>
+                </div>
+            <div >  
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+            main.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

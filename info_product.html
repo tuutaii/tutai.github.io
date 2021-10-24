@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <title>Trang thông tin sản phẩm</title>
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="css/info_product.css">
+    </head>
+
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><i class="  fas fa-home" aria-hidden="true"></i></span>
+                        <span  class="title"><h2>NONGSANXANH</h2></span>
+                    </a>
+                </li>
+                <br><br>
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><i class="  fas fa-home" aria-hidden="true"></i></span>
+                        <span  class="title">Trang chủ</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="isActive" href="#">
+                        <span class="icon"><i class="fas fa-shopping-basket" aria-hidden="true"></i></span>
+                        <span  class="title">Quản lý nhà sản phẩm</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="bill.html">
+                        <span class="icon"><i class="fas fa-users" aria-hidden="true"></i></span>
+                        <span  class="title">Quản lý đơn hàng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="inbox.html">
+                        <span class="icon"><i class="fas fa-comments"></i></span>
+                        <span  class="title">Trò chuyện</span>
+                    </a>
+                </li>
+    
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <a href="profile.html"><img src="user.jpg"></a>
+                </div>
+            </div>
+            
+            <div class="details">
+                <div class="productImg">
+
+                    <div class="cardHeader">
+                        <h2>Thông tin sản phẩm</h2>
+                    </div>
+
+                    <img src="img1.jpg">
+                    <div class="button"><a href="products.html" class="btn_them">Cập nhật ảnh</a></div>
+                </div>
+
+                <div class="productInfo">
+                    
+                    <div class="productMain">
+                        <h1 class="nameProduct">Bắp cải xanh</h1>
+                        <h2 class="price"><span>20,000</span> vnđ/kg</h2>
+                        <h2>Loại: Rau củ</h2>
+                      
+                        <h2>Mô tả: Bắp cải xanh tươi nhà trồng</h2>
+                       
+                        <h2>Số lượng: 10kg</h2>
+                       
+                        <div class="button">
+                            <a href="products.html" class="btn_them" >Cập nhật sản phẩm </a>
+                        </div>    
+                    </div>
+                </div>
+
+            <div >  
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+            main.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
